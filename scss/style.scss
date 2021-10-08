@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    touch-action: none;
+    outline: none;
+    user-select: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(44, 8, 58);
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;    
+    width: 100px;
+    min-height: 100vh;
+    background: rgb(32, 3, 34);
+
+    button {
+        width: 60px;
+        height: 60px;
+        background: rgba(205, 193, 206, 0.1);
+        color: rgb(205, 193, 206);
+        border: 2px solid rgb(205, 193, 206);
+        border-style: dashed;
+        border-radius: 8px;
+
+        &:hover,
+        &:active {
+            cursor: pointer;
+        }
+
+        &:nth-of-type(2) {
+            margin: 20px 0;
+        }
+    }
+}
+
+.canvas {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(112, 112, 112);
+    }
+}
+
+
